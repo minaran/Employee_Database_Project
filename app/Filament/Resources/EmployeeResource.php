@@ -55,7 +55,6 @@ class EmployeeResource extends Resource
                 TextColumn::make('department.name')->sortable()->searchable(),
                 TextColumn::make('date_of_joining')->date()->searchable(),
                 TextColumn::make('qualifications')->sortable(),
-
             ])
             ->filters([
                 SelectFilter::make('department')->relationship('department', 'name')
